@@ -125,15 +125,15 @@ const action_t fn_actions[] PROGMEM = {
      */
 
     /* Default layer */
-    [3] = ACTION_MODS_KEY(MOD_LALT, KC_MINUS), /* – */
-    [4] = ACTION_MODS_KEY(MOD_LALT, KC_8),     /* • */
+    [3]  = ACTION_MODS_KEY(MOD_LALT, KC_MINUS), /* – */
+    [4]  = ACTION_MODS_KEY(MOD_LALT, KC_8),     /* • */
 
     /* Symbol layer: number row */
-    [5] = ACTION_MODS_KEY(MOD_LSFT, KC_2),                    /* @ */
-    [6] = ACTION_MODS_KEY(MOD_LSFT, KC_3),                    /* £ */
-    [7] = ACTION_MODS_KEY(MOD_LALT, KC_LBRACKET),             /* “ */
-    [8] = ACTION_MODS_KEY(MOD_LALT | MOD_LSFT, KC_LBRACKET),  /* ” */
-    [9] = ACTION_MODS_KEY(MOD_LALT, KC_RBRACKET),             /* ‘ */
+    [5]  = ACTION_MODS_KEY(MOD_LSFT, KC_2),                   /* @ */
+    [6]  = ACTION_MODS_KEY(MOD_LSFT, KC_3),                   /* £ */
+    [7]  = ACTION_MODS_KEY(MOD_LALT, KC_LBRACKET),            /* “ */
+    [8]  = ACTION_MODS_KEY(MOD_LALT | MOD_LSFT, KC_LBRACKET), /* ” */
+    [9]  = ACTION_MODS_KEY(MOD_LALT, KC_RBRACKET),            /* ‘ */
     [10] = ACTION_MODS_KEY(MOD_LALT | MOD_LSFT, KC_RBRACKET), /* ’ */
 
     /* Symbol layer: upper row */
