@@ -34,7 +34,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      * |-----------------------------------------------------------|
      * |Symbol|  D|  S|  T|  N|  R|  I|  A|  E|  O|  H|Sym|Enter   |
      * |-----------------------------------------------------------|
-     * |Shift   |  Z|  X|  C|  V|  J|  K|  P|  ,|  .|  •|Shift |Num|
+     * |Shift   |  Z|  X|  C|  V|  J|  K|  P|  ,|  .|  /|Shift |Num|
      * `-----------------------------------------------------------'
      *       |Ctl|Gui  |         Space         |Alt  |Ctl|
      *       `-------------------------------------------'
@@ -42,7 +42,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
     KEYMAP(FN1, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   NO,  VOLD,MUTE,VOLU,  \
            TAB, Q,   G,   M,   L,   W,   Y,   F,   U,   B,   FN3, BSPC,ESC, FN2,        \
            FN0, D,   S,   T,   N,   R,   I,   A,   E,   O,   H,   FN0, ENT,             \
-           LSFT,Z,   X,   C,   V,   J,   K,   P,   COMM,DOT, FN4, RSFT,FN1,             \
+           LSFT,Z,   X,   C,   V,   J,   K,   P,   COMM,DOT, SLSH,RSFT,FN1,             \
                 LCTL,LGUI,          SPC,                RALT,RCTL),
 
     /* Layer 1: Symbol layer
@@ -126,7 +126,7 @@ const action_t fn_actions[] PROGMEM = {
 
     /* Default layer */
     [3]  = ACTION_MODS_KEY(MOD_LALT, KC_MINUS), /* – */
-    [4]  = ACTION_MODS_KEY(MOD_LALT, KC_8),     /* • */
+    /* [4]  = ACTION_KEY(KC_NONE), */
 
     /* Symbol layer: number row */
     [5]  = ACTION_MODS_KEY(MOD_LSFT, KC_2),                   /* @ */
